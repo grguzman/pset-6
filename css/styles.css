@@ -1,0 +1,181 @@
+body {
+  background-color: lightGreen;
+}
+hr{
+  margin-top: 69px;
+}
+.title {
+  font-family: serif;
+  font-size: 75px;
+  color: red;
+  width: 1000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.todo_header{
+  text-align: center;
+  font-family: serif;
+  font-size: 40px;
+  color: red;
+}
+table {
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    margin-top: 10px;
+    border-spacing: 5px;
+    background-color: black;
+    font-family:times;
+}
+.to_do {
+  font-family: times;
+  text-align: center;
+  background-color: white;
+  font-size: 30px;
+}
+}
+.row {
+    margin-top:1000px;
+    height: 1000px;
+}
+.priority_button {
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    border: 0px solid;
+}
+.priority_button:hover {
+    background-color: purple;
+}
+.complete_button {
+    align: left;
+    width: 40px;
+    text-align: center;
+    background-color: lightgreen;
+    border: 0px solid;
+}
+.complete_button:hover {
+    background-color: black;
+}
+.remove_button {
+    align: left;
+    width: 40px;
+    text-align: center;
+    background-color: red;
+    border: 0px solid;
+}
+.remove_button:hover {
+    background-color: Black;
+}
+.input {
+  text-align: center;
+  width:500px;
+  height: 25px;
+  font-family: times;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.user_input {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left
+}
+.button_add:hover {
+   background-color: #ff1a1a;
+}
+
+.button_add {
+  margin-left: 15px;
+  margin-bottom: 20px;
+  background-color: white;
+  font-size: 10px;
+  color: white;
+  float: center;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 8px;
+  border-color: darkred;
+  top: 0;
+  left: 0;
+  transition: all .15s linear 0s;
+  position: relative;
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: red;
+
+  text-transform: uppercase;
+  color: black;
+  font-family: serif;
+  letter-spacing: 1px;
+
+  box-shadow: -6px 6px 0 black;
+  text-decoration: none;
+}
+
+  .button_add:hover {
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 #black;
+}
+
+    .button_add::after {
+      top: 1px;
+      left: -2px;
+      width: 4px;
+      height: 4px;
+    }
+
+    .button_add::before {
+      bottom: -2px;
+      right: 1px;
+      width: 4px;
+      height: 4px;
+    }
+  }
+
+  .button_add::after {
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    background-color: #black;
+    transform: rotate(35deg);
+    z-index: -1;
+  }
+
+  .button_add::before {
+    transition: all .15s linear 0s;
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: #black;
+    transform: rotate(35deg);
+    z-index: -1;
+  }
+}
+
+div.button_add { position: relative; }
+
+div:active.button_add {
+  top: 6px;
+  left: -6px;
+  box-shadow: none;
+
+  &:before {
+    bottom: 1px;
+    right: 1px;
+  }
+
+  &:after {
+    top: 1px;
+    left: 1px;
+  }
